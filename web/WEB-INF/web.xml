@@ -8,10 +8,6 @@
         <servlet-class>controller.loginController</servlet-class>
     </servlet>
     <servlet>
-        <servlet-name>mainController</servlet-name>
-        <servlet-class>mainController</servlet-class>
-    </servlet>
-    <servlet>
         <servlet-name>registerController</servlet-name>
         <servlet-class>controller.registerController</servlet-class>
     </servlet>
@@ -50,10 +46,6 @@
     <servlet-mapping>
         <servlet-name>loginController</servlet-name>
         <url-pattern>/loginController</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping>
-        <servlet-name>mainController</servlet-name>
-        <url-pattern>/mainController</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
         <servlet-name>registerController</servlet-name>
