@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+<!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Register</title>
+<link rel="icon" href="images/dc_logo_icon.png" sizes="16x16" type="image/png">
+<link rel="manifest" href="images/fav/site.webmanifest">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+
+<!-- CSS -->
+<link rel="stylesheet" href="css/font-awesome.min.css">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="https://use.typekit.net/hxv7cob.css">
+<link rel="stylesheet" href="css/ecm-style.css">
+<script>
+    function fun()
+    {
+     let pass=$("#usrPass").val();   
+     let confirmPass=$("#confirmPass").val();   
+     let status=1;
+     if(pass===confirmPass)
+     {
+           return true;
+     }
+     else
+     {
+         alert("Confirm Password mismatch");
+        return false;
+      }
+      }
+    </script>
+</head>
+<body class="bgLogin">
+<div class="container">
+	<div class="row">
+		<div class="col-md-10 outerBlk mx-auto">
+			<div class="row">
+				<div class="col-6 leftLogoBlk d-flex justify-content-between flex-column">
+					<div class="row">
+						<div class="col">
+							<div class="ssLogo pt-2 pb-1">
+								<object type="image/svg+xml" data="images/ss-icon-white.svg" class="logoLogin">SS Logo</object>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-12">
+							<div class="row">
+								<div class="col tagline text-center">Be one of the first to explore <br>
+							what’s next in B2B Marketing!</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-6 loginBlk d-flex justify-content-between flex-column">
+					<div class="row">
+						<div class="col-12"><h1 class="pageHead">Create New Account</h1></div>
+						<div class="col-12 loginForm">
+							<form method="post" action="registerController" id="loginForm">
+                                                                 <div class="form-group">
+									<label for="fullname" class="sr-only">full name</label>
+									<input type="text" class="form-control" id="fullname" name="fullname" aria-describedby="fullname" placeholder="Type your Full Name">
+								</div>
+								<div class="form-group">
+									<label for="email" class="sr-only">email</label>
+									<input type="email" class="form-control" id="email" name="email" aria-describedby="email" placeholder="Type your email here" required="required">
+								</div>
+								<div class="form-group">
+									<label for="usrPass" class="sr-only">password</label>
+									<input type="password" class="form-control" id="usrPass" name="usrPass" aria-describedby="usrPass" placeholder="Type your password">
+								</div>
+								<div class="form-group">
+									<label for="confirmPass" class="sr-only">confirm password</label>
+									<input type="password" class="form-control" id="confirmPass" name="confirmPass" aria-describedby="confirmPass" placeholder="confirm password">
+								</div>
+								<div class="form-group text-right">
+                                                                    <button type="submit" onclick="return fun();" class="btn btn-login" id="submitBtn" title="Register_Now">Register Now</button>
+									<p align="right"><a href="LoginPage.jsp" class="sign" style="font-size: 18px;">Already have Account? Clicke here</a></p>
+								</div>
+ 							</form>
+ 						</div>
+					</div>
+					<div class="row">
+						<div class="col footTxt text-right">&copy; 2020 My Projects | All Rights Reserved</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- JavaScripts -->
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.js"></script>
+<script src="js/ecm-js.js"></script>
+</body>
+</html>
+

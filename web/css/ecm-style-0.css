@@ -1,0 +1,129 @@
+@charset "utf-8";
+/* CSS Document */
+html, body {height:100%;}
+body {padding-bottom:80px; padding-top:80px;}
+
+.bgLogin, .bgDash {display:flex; flex:1; height:100vh; min-width:100%; align-items:center; justify-content:center; background-color:#0b0b0b; background-repeat:no-repeat;}
+
+.bgLogin {background-image:url(../images/loginbg.jpg); background-size:cover; background-position:center;}
+.bgDash {background-image:url(../images/dashbg.jpg); background-size:cover; background-position:center;}
+
+
+/*----- Login Page CSS -----*/
+
+.leftLogoBlk {min-height:500px; background-image:url("../images/effect.png"); background-size:cover; background-position:center; background-repeat:no-repeat;}
+
+.gradLeft {margin-right:-16px; height:380px; background:rgba(237,237,237,0);
+background: -moz-radial-gradient(center, ellipse cover, rgba(237,237,237,0) 0%, rgba(246,246,246,0.45) 45%, rgba(247,247,247,1) 100%); background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(237,237,237,0)), color-stop(45%, rgba(246,246,246,0.45)), color-stop(100%, rgba(247,247,247,1)));
+background: -webkit-radial-gradient(center, ellipse cover, rgba(237,237,237,0) 0%, rgba(246,246,246,0.45) 45%, rgba(247,247,247,1) 100%); background: -o-radial-gradient(center, ellipse cover, rgba(237,237,237,0) 0%, rgba(246,246,246,0.45) 45%, rgba(247,247,247,1) 100%); background: -ms-radial-gradient(center, ellipse cover, rgba(237,237,237,0) 0%, rgba(246,246,246,0.45) 45%, rgba(247,247,247,1) 100%); background: radial-gradient(ellipse at center, rgba(237,237,237,0) 0%, rgba(246,246,246,0.45) 45%, rgba(247,247,247,1) 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ededed', endColorstr='#f7f7f7', GradientType=1 );}
+
+
+.ssLogo {background:#c4da45; width:80px; max-width:80px; margin-top:2rem; margin-left:-1.375rem;}
+.logoLogin {height:40px; margin-left:1.375rem;}
+.tagline {font-family:niveau-grotesk, sans-serif; font-weight:300; font-style:normal; font-size:1.875rem; line-height:2.25rem; margin-bottom:1.375rem;}
+
+
+.loginBlk {padding:1rem 3rem 0.5rem; background:#fff; min-height:500px;}
+.pageHead {font-family:paralucent, sans-serif; font-weight:600; font-style:normal; font-size:2.25rem; color:#c4da45; margin-top:2rem; margin-bottom:3rem;}
+
+.loginForm {font-family:niveau-grotesk, sans-serif; font-weight:200; font-style:normal;}
+.loginForm input[type] {background:none; color:#364f18; border-radius:0; border:none; border-bottom:1px solid #c4da45; font-size:0.875rem; font-weight:200; padding-left:0;}
+
+.loginForm input::placeholder {color:#bbb;}
+.loginForm input::-webkit-input-placeholder {color:#bbb;}
+.loginForm input::-moz-placeholder {color:#bbb;}
+.loginForm input:-moz-placeholder {color:#bbb;}
+.loginForm input:-ms-input-placeholder {color:#bbb;}
+.loginForm input::-ms-input-placeholder {color:#bbb;}
+
+.loginForm .form-control {}
+.loginForm .form-control:focus {box-shadow:none;}
+
+.loginForm label.error {color:#dc3545; font-size:0.8125rem; font-weight:400;}
+.loginForm input[type].error {border-color:#dc3545;}
+
+
+.loglinks {display:flex; justify-content:space-between; color:#c4da45; margin-top:2.5rem; margin-bottom:2.6875rem; font-family:niveau-grotesk, sans-serif; font-weight:200; font-style:normal;}
+.loglinks label {cursor:pointer; font-size:0.8125rem;}
+.loginForm a {color:#c4da45; font-size:0.8125rem;}
+.loginForm a:hover {text-decoration:none; color:#364f18;}
+.loginForm .custom-checkbox .custom-control-label::before, .loginForm .custom-control-label::after {border-radius:0; top:0.125rem;}
+.loginForm .custom-control-label::before, .loginForm .custom-control-input:not(:disabled):active~.custom-control-label::before {border-color:#c4da45;}
+.loginForm .custom-control-input:not(:disabled):active~.custom-control-label::before {background:none;}
+.loginForm .custom-control-input:focus:not(:checked)~.custom-control-label::before {border-color:#d4ff80;}
+.loginForm .custom-control-input:focus~.custom-control-label::before {box-shadow:none;}
+.loginForm .custom-control-input:checked~.custom-control-label::before {background:#c4d945; border-color:#a0b339;}
+
+.loginForm .btn-login {background:#c4d945; border-radius:0; text-transform:uppercase; font-weight:700; color:#090b0a; padding:0.3125rem 2.5rem;}
+.loginForm .btn-login:hover {color:#c4d945; background-color:#333; border-color:#333;}
+.loginForm .btn-login.focus, .loginForm .btn-login:focus {box-shadow: 0 0 0 0.2rem rgba(217,255,0,.5);}
+.loginForm .btn-login:not(:disabled):not(.disabled).active, .loginForm .btn-login:not(:disabled):not(.disabled):active, .show>.loginForm .btn-login.dropdown-toggle {color:#fff; background-color:#adcc00; border-color:#a3bf00;}
+
+.footTxt {margin-bottom:1rem; font-family:Arial, sans-serif; font-weight:400; font-style:normal; font-size:0.6875rem; color:#ccc;}
+
+
+
+/*----- Header CSS -----*/
+header .navbar {border-radius:0;}
+header .navbar-default {background-color:#090B0A!important; border:0;}
+header .navbar-brand {padding:0.3125rem 0 0 ; line-height:inherit;}
+header .ssHdrLogo {min-width:115px; width:115px;}
+.no-svg .ssHdrLogo {min-width:115px; height:40px; background-image:url('../images/ss-logo.png');}
+header object {pointer-events:none;}
+header .navbar-default .navbar-toggler-icon {background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(255, 255, 255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");}
+header .navbar-default .navbar-toggler {color: rgba(255,255,255,.5); border-color: rgba(255,255,255,.1);}
+
+.logName {font-family:"Helvetica Neue", Helvetica,Arial, sans-serif; font-style:normal; font-weight:400; font-size:0.875rem; color:#C3DA47; margin-left:1rem; margin-right:2rem;}
+.usrImg {display:inline-block; padding-top:5px; background:rgba(255,255,255,0.8); border-radius:50%; width:36px; height:36px; margin-right:0.625rem;}
+.usrImg img {width:22px;}
+
+.navIconsleft a, .navIconsright a {display:inline-block; background-color:#C3DA47; width:19px; font-family:"Helvetica Neue", Helvetica,Arial, sans-serif; font-style:normal; font-weight:400; font-size:0.875rem; text-align:center; color:inherit; text-decoration:none;}
+
+
+.iconBlk {background:rgba(255,255,255,0.9); margin-top:0.9375rem; margin-bottom:0.9375rem; min-height:180px;}
+.iconBlk img {width:110px; margin-bottom:0.625rem;}
+.iconBlk a {color:#599012; font-size:1.125rem; font-family: din-2014, sans-serif; font-style:normal; font-weight:600;}
+
+/*----- Media Query CSS -----*/
+@media (min-width: 2500px) {
+	.bgLogin {background-image:url(../images/loginbg2.jpg);}
+	.bgLogin .leftLogoBlk {min-height:750px; margin-right:-1px;}
+	.bgLogin .outerBlk {margin-bottom:5rem;}
+	.bgLogin .container {max-width:1800px;}
+	.bgLogin .loginBlk {padding:3rem 6rem 1rem;}
+	.bgLogin .ssLogo {width:100px; max-width:100px; margin-top:4rem; margin-left:-1.75rem;}
+	.bgLogin .logoLogin {height:60px;}
+	.bgLogin .pageHead {font-size:3.125rem; margin-top:3rem; margin-bottom:0rem;}
+	.bgLogin .tagline {font-size:2.25rem; line-height:inherit; padding-top:2.5rem; padding-bottom:0.9375rem;}
+	.bgLogin .loginForm input[type] {font-size:1.25rem; margin-bottom:2.5rem;}
+	.loginForm input[type].error {margin-bottom:0.5rem}
+	.bgLogin .loglinks {margin-top:3.5rem; margin-bottom:3.6875rem;}
+	.bgLogin .loglinks label, .bgLogin .loginForm a, .loginForm .btn-login {font-size:1.5rem;}
+	.bgLogin .loginForm .custom-checkbox .custom-control-label::before, .loginForm .custom-control-label::after {top:0.4375rem;}
+	.bgLogin .loginForm .btn-login {padding:0.4375rem 3.5rem;}
+	.bgLogin .footTxt {font-size:0.875rem;}
+	.iconBlk {margin:1.375rem 0.5rem;}
+}
+
+@media (min-width: 2000px) and (max-width: 2499px) {
+	.bgLogin .leftLogoBlk {min-height:670px; margin-right:-1px;}
+	.bgLogin .container {max-width:1500px;}
+	.bgLogin .outerBlk {margin-bottom:5rem;}
+	.bgLogin .loginBlk {padding:2rem 5rem 1rem;}
+	.bgLogin .ssLogo {width:100px; max-width:100px; margin-top:4rem; margin-left:-1.75rem;}
+	.bgLogin .logoLogin {height:60px;}
+	.bgLogin .pageHead {font-size:2.375rem; margin-top:3rem;}
+	.bgLogin .tagline {font-size:2.25rem; line-height:inherit; padding-top:2.5rem; padding-bottom:0.9375rem;}
+	.bgLogin .loginForm input[type] {font-size:1.25rem; margin-bottom:2.5rem;}
+	.loginForm input[type].error {margin-bottom:0.5rem}
+	.bgLogin .loglinks {margin-top:3.5rem; margin-bottom:3.6875rem;}
+	.bgLogin .loglinks label, .bgLogin .loginForm a, .loginForm .btn-login {font-size:1.5rem;}
+	.bgLogin .loginForm .custom-checkbox .custom-control-label::before, .loginForm .custom-control-label::after {top:0.4375rem;}
+	.bgLogin .loginForm .btn-login {padding:0.4375rem 3.5rem;}
+	.bgLogin .footTxt {font-size:0.875rem;}
+	.iconBlk {margin:1.375rem 0.5rem;}
+}
+
+@media (max-width:575px) {
+	.bgDash {background:url('../images/dashbg.jpg') no-repeat center center fixed;}
+}
